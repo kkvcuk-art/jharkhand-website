@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism in Jharkhand</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f7f4;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: url("images/tourism-jharkhand.jpg") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.3em;
+    }
+
+    /* Navigation */
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      background: yellowgreen;
+      color: #222;
+    }
+
+    /* Sections */
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      color: darkgreen;
+      font-size: 2em;
+      margin-bottom: 30px;
+      border-bottom: 3px solid seagreen;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Cards Grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h3 {
+      color: darkgreen;
+      margin-bottom: 10px;
+    }
+    .card-content p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+    .card-content a {
+      display: inline-block;
+      padding: 8px 14px;
+      background: seagreen;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9em;
+      transition: 0.3s;
+    }
+    .card-content a:hover {
+      background: darkgreen;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 30px;
+    }
+
+    /* Responsive text */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2em; }
+      .hero p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Tourism in Jharkhand</h1>
+    <p>Discover Waterfalls, Hills, Spirituality, Wildlife & Heritage</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="geography.html">Geography</a>
+    <a href="culture.html">Culture</a>
+    <a href="tourism.html">Tourism</a>
+    <a href="economy.html">Economy</a>
+    <a href="personalities.html">Personalities</a>
+    
+  </nav>
+
+  <!-- Ranchi Attractions -->
+  <section>
+    <h2>🏞️ Ranchi – The City of Waterfalls</h2>
+    
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/lodh-fall.webp" alt="Lodh Fall">
+        <div class="card-content">
+          <h3>Lodh Falls</h3>
+          <p>The Lodh Falls (also known as Budha Ghagh) is a waterfall on the Burha River in the mid-forest of Palamau Tiger Reserve, in Latehar district of Jharkhand state in India. It is the highest waterfall in Jharkhand and the 21st highest waterfall in India.</p>
+          <a href="#">Explore More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/hundru-falls.jpg" alt="Hundru Falls">
+        <div class="card-content">
+          <h3>Hundru Falls</h3>
+          <p>Hundru Falls is a waterfall located in Ranchi District in the Indian state of Jharkhand. It is the 34th highest waterfall in India, and one of the most famous tourist places in the region.</p>
+          <a href="#">Explore More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/dassam-falls.jpg" alt="Dassam Falls">
+        <div class="card-content">
+          <h3>Dassam Falls</h3>
+          <p>The Dassam Falls (also known as Dassam Ghagh) is a waterfall located near Taimara village in the Bundu subdivision of Ranchi district in the Indian state of Jharkhand.[1] The Falls are 144 feet in height, formed by the waterflow of the Kanchi River.</p>
+          <a href="#">Explore More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/jonha-falls.jpg" alt="Jonha Falls">
+        <div class="card-content">
+          <h3>Jonha Falls</h3>
+          <p>The Jonha Falls (also called Gautamdhara Falls) is a waterfall located in Ranchi district in the Indian state of Jharkhand.Situated at an edge of the Ranchi plateau, the Jonha Falls is an example of a hanging valley falls.</p>
+          <a href="#">Explore More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deoghar Attractions -->
+  <section>
+    <h2>🕉️ Deoghar – The Spiritual Capital</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/baidyanath-dham.jpg" alt="Baidyanath Temple">
+        <div class="card-content">
+          <h3>Baidyanath Temple</h3>
+          <p>One of the twelve Jyotirlingas, attracting millions of Shiva devotees, especially in Shravan.</p>
+          <a href="#">Explore More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/naulakha-mandir.jpg" alt="Naulakha Mandir">
+        <div class="card-content">
+          <h3>Naulakha Mandir</h3>
+          <p>A beautiful marble temple, built at a cost of nine lakh rupees, known for its unique architecture.</p>
+          <a href="#">Explore More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wildlife Attractions -->
+  <section>
+    <h2>🐅 Wildlife & Nature</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="#" alt="Betla National Park">
+        <div class="card-content">
+          <h3>Betla National Park</h3>
+          <p>Part of Palamu Tiger Reserve, home to tigers, elephants, and rich biodiversity.</p>
+          <a href="#">Explore More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/hazaribagh-park.jpg" alt="Hazaribagh National Park">
+        <div class="card-content">
+          <h3>Hazaribagh National Park</h3>
+          <p>A peaceful retreat with leopards, deer, and numerous bird species. Jeep safaris available.</p>
+          <a href="#">Explore More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><b>© Johar Jharkhand</b></p>
+  </footer>
+
+</body>
+</html>

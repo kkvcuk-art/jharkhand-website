@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture & Festivals of Jharkhand</title>
+  <style>
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body { font-family: "Segoe UI", Arial, sans-serif; background: #f4f7f4; color: #333; line-height: 1.7; }
+
+    /* Hero Section */
+    .hero {
+      background: url('images/culture-hero.jpg') center/cover no-repeat;
+      color: white; text-align: center; padding: 120px 20px; position: relative;
+    }
+    .hero::after {
+      content: ""; position: absolute; top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h1, .hero p { position: relative; z-index: 1; }
+    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; }
+
+    /* Navigation */
+    nav { background: #222; display: flex; justify-content: center; gap: 25px; padding: 12px 0; position: sticky; top:0; z-index: 1000; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; padding: 6px 12px; border-radius: 6px; transition: 0.3s; }
+    nav a:hover { background: goldenrod; color: #222; }
+
+    /* Main Section */
+    main { max-width: 1200px; margin: auto; padding: 30px 20px; }
+    h2 { color: darkgreen; margin-bottom: 20px; font-size: 2em; display: flex; align-items: center; gap: 10px; }
+    h3 { color: #444; margin-top: 15px; }
+    p, li { margin-bottom: 10px; }
+
+    /* Grid Cards */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 20px; margin-top: 20px; }
+    .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; }
+    .card:hover { transform: translateY(-6px); }
+    .card img { width: 100%; border-radius: 10px; margin-bottom: 10px; transition: transform 0.3s; }
+    .card img:hover { transform: scale(1.05); }
+    .card h3 { margin-bottom: 10px; color: firebrick; font-size: 1.3em; }
+
+    /* Fact Boxes */
+    .fact-box { background:#e0ffe0; padding:15px; margin:15px 0; border-left:5px solid darkgreen; font-weight: bold; }
+
+    /* Footer */
+    footer { background: #222; color: #ccc; text-align: center; padding: 15px; font-size: 0.9em; margin-top: 30px; border-top: 3px solid darkgreen; }
+
+    @media(max-width:768px) {
+      .hero h1 { font-size: 2em; }
+      .hero p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Culture & Festivals of Jharkhand</h1>
+    <p>A Land of Vibrant Traditions, Folk Arts, and Tribal Heritage</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="geography.html">Geography</a>
+    <a href="culture.html">Culture</a>
+    <a href="tourism.html">Tourism</a>
+    <a href="economy.html">Economy</a>
+    <a href="personalities.html">Personalities</a>
+    
+  </nav>
+
+  <main>
+
+    <!-- Introduction -->
+    <section>
+      <h2>Introduction</h2>
+      <p>Jharkhand is often called the <b>"Land of Tribes"</b>, home to communities like Santhal, Munda, Oraon, Ho, and Kharia. Its culture blends tribal traditions and neighboring influences, resulting in a vibrant identity. Festivals, expressive dances, soulful music, and rich handicrafts define its heritage.</p>
+    </section>
+
+    <!-- Music & Dance -->
+    <section>
+      <h2>🎶 Music & Dance</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Chhau Dance</h3>
+          <p>Semi-classical dance with martial elements; performed with masks and elaborate costumes. Narrates stories from epics.</p>
+          <img src="images/chhau-dance.jpg" alt="Chhau Dance">
+        </div>
+        <div class="card">
+          <h3>Santhali Dance</h3>
+          <p>Performed during harvest festivals; men and women dance in circles to drums and flutes.</p>
+          <img src="images/santhali-dance.jpg" alt="Santhali Dance">
+        </div>
+        <div class="card">
+          <h3>Karma Dance</h3>
+          <p>Celebrates fertility and prosperity around the sacred Karma tree.</p>
+          <img src="images/karma-dance.jpg" alt="Karma Dance">
+        </div>
+        <div class="card">
+          <h3>Paika Dance</h3>
+          <p>Warrior dance showcasing bravery with swords and shields.</p>
+          <img src="images/paika-dance.jpg" alt="Paika Dance">
+        </div>
+        <div class="card">
+          <h3>Nagpuri Dance</h3>
+          <p>Popular among non-tribal communities; performed during social gatherings and festivals.</p>
+          <img src="images/nagpuri-dance.jpg" alt="Nagpuri Dance">
+        </div>
+      </div>
+    </section>
+
+    <!-- Art & Handicrafts -->
+    <section>
+      <h2>🎨 Art & Handicrafts</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Sohrai & Kohbar Paintings</h3>
+          <p>Mural paintings using natural colors. Sohrai depicts animals and farming life; Kohbar is for marriages.</p>
+          <img src="images/sohrai-painting.jpg" alt="Sohrai Painting">
+        </div>
+        <div class="card">
+          <h3>Paitkar Paintings</h3>
+          <p>Scroll paintings narrating stories through hand-drawn illustrations.</p>
+          <img src="images/paitkar-painting.jpg" alt="Paitkar Painting">
+        </div>
+        <div class="card">
+          <h3>Bamboo & Wood Crafts</h3>
+          <p>Household items, baskets, and decorative pieces.</p>
+          <img src="images/bamboo-wood-crafts.jpg" alt="Bamboo & Wood Crafts">
+        </div>
+        <div class="card">
+          <h3>Dokra Art</h3>
+          <p>Lost-wax metal casting used for jewelry, idols, and figurines.</p>
+          <img src="images/dokra-art.jpg" alt="Dokra Art">
+        </div>
+      </div>
+    </section>
+
+    <!-- Festivals -->
+    <section>
+      <h2>🎉 Festivals of Jharkhand</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Tribal Festivals</h3>
+          <ul>
+            <li><b>Sarhul:</b> Spring festival; worships the Sal tree for a good harvest.</li>
+            <li><b>Sohrai:</b> Post-harvest festival honoring cattle.</li>
+            <li><b>Karma:</b> Singing and dancing around the Karma tree.</li>
+            <li><b>Tusu Parab:</b> Winter harvest festival; folk songs honor Goddess Tusu.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Other Popular Festivals</h3>
+          <ul>
+            <li>Durga Puja, Diwali, Holi</li>
+            <li>Eid and Christmas</li>
+            <li>Chhath Puja – Dedicated to Sun God</li>
+          </ul>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuisine -->
+    <section>
+      <h2>🍲 Cuisine of Jharkhand</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Dhuska</h3>
+          <p>Deep-fried rice and lentil pancakes served with curry.</p>
+          <img src="images/dhuska.jpg" alt="Dhuska">
+        </div>
+        <div class="card">
+          <h3>Pitha</h3>
+          <p>Steamed or fried rice cake stuffed with vegetables or sweets.</p>
+          <img src="images/pitha.jpg" alt="Pitha">
+        </div>
+        <div class="card">
+          <h3>Handia</h3>
+          <p>Traditional rice beer fermented with natural herbs.</p>
+          <img src="images/handia.jpg" alt="Handia">
+        </div>
+        <div class="card">
+          <h3>Chilka Roti & Tilkut</h3>
+          <p>Rice flour flatbread and sweet sesame-jaggery treat popular in winter.</p>
+          <img src="images/chilka-roti-tilkut.jpg" alt="Chilka ROti & Tilkut">
+        </div>
+      </div>
+    </section>
+
+    <!-- Fact Box -->
+    <section class="fact-box">
+      <p>Fact: Jharkhand is home to more than 32 tribal communities, each with unique art, music, and festivals!</p>
+      
+    </section>
+
+  </main>
+
+  <footer>
+    <p><b>© Johar Jharkhand</b></p>
+  </footer>
+
+</body>
+</html>

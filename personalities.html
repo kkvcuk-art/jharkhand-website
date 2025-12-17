@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalities from Jharkhand</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: "Segoe UI", Arial, sans-serif; background:#f4f7f4; color:#333; line-height:1.7; }
+
+
+
+
+    /* Hero Section */
+    .hero {
+      background: url('images/jharkhand-heroes.jpg') center/cover no-repeat;
+      color:white; text-align:center; padding:100px 20px; position:relative;
+    }
+    .hero::after {
+      content:""; position:absolute; top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h1, .hero p { position:relative; z-index:1; }
+    .hero h1 { font-size:3em; margin-bottom:10px; }
+    .hero p { font-size:1.2em; font-style:italic; }
+
+    /* Navigation */
+    nav { background:#222; display:flex; justify-content:center; gap:25px; padding:12px 0; position:sticky; top:0; z-index:1000; }
+    nav a { color:#fff; text-decoration:none; font-weight:bold; padding:6px 12px; border-radius:6px; transition:0.3s; }
+    nav a:hover { background:goldenrod; color:#222; }
+
+    /* Main Section */
+    main { max-width:1200px; margin:auto; padding:30px 20px; }
+    h2 { color: darkgreen; margin-bottom:20px; font-size:2em; }
+    
+    /* Grid Cards */
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:20px; margin-top:20px; }
+    .card { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; }
+    .card:hover { transform: translateY(-6px); }
+    .card img { width:100%; border-radius:10px; margin-bottom:10px; transition: transform 0.3s; }
+    .card img:hover { transform: scale(1.05); }
+    .card h3 { margin-bottom:10px; color: firebrick; font-size:1.3em; }
+
+    /* Fact Box */
+    .fact-box { background:#e0ffe0; padding:15px; margin:15px 0; border-left:5px solid darkgreen; font-weight:bold; }
+
+    /* Footer */
+    footer { background:#222; color:#ccc; text-align:center; padding:15px; font-size:0.9em; margin-top:30px; border-top:3px solid darkgreen; }
+
+    @media(max-width:768px) {
+      .hero h1 { font-size:2em; }
+      .hero p { font-size:1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Personalities from Jharkhand</h1>
+    <p>"Legends Born from the Heart of Jharkhand"</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="geography.html">Geography</a>
+    <a href="culture.html">Culture</a>
+    <a href="tourism.html">Tourism</a>
+    <a href="economy.html">Economy</a>
+    <a href="personalities.html">Personalities</a>
+    
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h3>Birsa Munda (1875–1900)</h3>
+        <img src="images/birsa-munda.jpg" alt="Birsa Munda">
+        <p>Freedom fighter and tribal leader who led the <b>Munda Rebellion (Ulgulan)</b> against British rule. Honored as <b>“Dharti Abba”</b>.</p>
+      </div>
+
+      <div class="card">
+        <h3>Jaipal Singh Munda (1903–1970)</h3>
+        <img src="images/jaipal-munda.jpg" alt="Jaipal Singh Munda">
+        <p>Hockey captain of the 1928 Olympics gold-winning Indian team. Advocate for tribal rights and Jharkhand statehood.</p>
+      </div>
+
+      <div class="card">
+        <h3>Shibu Soren</h3>
+        <img src="images/shibu-soren.jpg" alt="Shibu Soren">
+        <p>Founder of Jharkhand Mukti Morcha, three-time Chief Minister, and key leader for Jharkhand's creation in 2000.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mahendra Singh Dhoni</h3>
+        <img src="images/ms-dhoni.jpg" alt="MS Dhoni">
+        <p>Legendary cricket captain from Ranchi. Led India to T20 2007, ICC 2011 World Cup, and 2013 Champions Trophy victories.</p>
+      </div>
+
+      <div class="card">
+        <h3>Deepika Kumari</h3>
+        <img src="images/deepika-kumari.jpg" alt="Deepika Kumari">
+        <p>World No.1 archer from Ranchi, representing India in multiple Olympics and inspiring young athletes globally.</p>
+      </div>
+
+      <div class="card">
+        <h3>Priyanka Chopra Jonas</h3>
+        <img src="images/priyanka-chopra.jpg" alt="Priyanka Chopra">
+        <p>Internationally recognized actress, singer, and humanitarian. Miss World 2000 and active in social causes through UNICEF.</p>
+      </div>
+    </section>
+
+    <!-- Other Personalities -->
+    <section>
+      <h2>Other Notable Personalities</h2>
+      <ul>
+        <li><b>Kariya Munda</b> – Senior BJP leader and former Deputy Speaker of Lok Sabha.</li>
+        <li><b>Meira Kumar</b> – Politician and diplomat; family roots in Jharkhand.</li>
+        <li><b>Ranchi Rays Players</b> – Hockey players representing India internationally.</li>
+        <li><b>Artists & Folk Performers</b> – Preserving tribal traditions in music, dance, and painting.</li>
+      </ul>
+      <div class="fact-box">
+        Fact: Jharkhand has produced leaders and athletes who symbolize courage, resilience, and pride in cultural heritage.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><b>© Johar Jharkhand</b></p>
+  </footer>
+
+</body>
+</html>

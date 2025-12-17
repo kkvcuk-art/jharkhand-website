@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jharkhand – Explore the Land of Forests & Tribes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height:1.6; background:#f7f9f9; color:#333; scroll-behavior:smooth; }
+
+    /* Header Hero */
+    header { position: relative; height: 80vh; overflow:hidden; }
+    header img { width:100%; height:100%; object-fit:cover; filter:brightness(60%); }
+    header .overlay { position:absolute; top:0; left:0; width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff; text-align:center; padding:0 20px; }
+    header h1 { font-size:3rem; margin-bottom:15px; animation:fadeInDown 1s ease forwards; }
+    header p { font-size:1.3rem; margin-bottom:20px; animation:fadeInUp 1s ease forwards; }
+    header a { display:inline-block; padding:12px 25px; background:#ffeb3b; color:#000; text-decoration:none; font-weight:bold; border-radius:5px; transition:0.3s; animation:fadeInUp 1.5s ease forwards; }
+    header a:hover { background:#fdd835; }
+
+    @keyframes fadeInDown { from{opacity:0; transform:translateY(-20px);} to{opacity:1; transform:translateY(0);} }
+    @keyframes fadeInUp { from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);} }
+
+    /* Navigation */
+    nav { background: #222; display: flex; justify-content: center; gap: 25px; padding: 12px 0; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; padding: 6px 12px; border-radius: 6px; transition: 0.3s; }
+    nav a:hover { background: goldenrod; color: #222; }
+
+    /* Sections */
+    section { max-width:1200px; margin:auto; padding:50px 20px; }
+    section h2 { font-size:2rem; color:#2e7d32; text-align:center; margin-bottom:40px; position:relative; }
+    section h2::after { content:""; position:absolute; width:60px; height:3px; background:#2e7d32; left:50%; transform:translateX(-50%); bottom:-10px; border-radius:3px; }
+    #intro p { text-align:center; max-width:800px; margin:auto; color:#555; font-size:1.1rem; }
+
+    /* Cards */
+    .cards, .attract-cards, .top5-list { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .card, .attract-card, .top5-item { background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1); width:250px; text-align:center; transition:transform 0.3s, box-shadow 0.3s; opacity:0; transform:translateY(20px); }
+    .card.visible, .attract-card.visible, .top5-item.visible { opacity:1; transform:translateY(0); }
+    .card:hover, .attract-card:hover, .top5-item:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.2); }
+    .card img, .attract-card img, .top5-item img { width:100%; height:180px; object-fit:cover; }
+    .card h3, .attract-card h4, .top5-item h4 { margin:15px 0 10px; color:#2e7d32; }
+    .card p, .attract-card p, .top5-item p { padding:0 15px 15px; color:#555; font-size:0.95rem; }
+    .card a { display:inline-block; margin-bottom:15px; padding:8px 15px; background:#2e7d32; color:#fff; border-radius:5px; text-decoration:none; transition:0.3s; }
+    .card a:hover { background:#43a047; }
+
+    /* Facts */
+    .facts { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; margin-top:50px; }
+    .fact { background:#2e7d32; color:#fff; padding:15px 20px; border-radius:8px; flex:1 1 150px; text-align:center; min-width:120px; }
+    .fact b { display:block; font-size:1.1rem; margin-top:5px; }
+
+    /* Footer */
+    footer { background:#333; color:white; text-align:center; padding:20px; margin-top:40px; font-size:0.9rem; }
+
+    /* Responsive */
+    @media(max-width:900px){ .cards, .attract-cards, .top5-list{flex-direction:column; align-items:center;} header h1{font-size:2.2rem;} header p{font-size:1.1rem;} header a{padding:10px 20px;}}
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<header>
+  <img src="images/Jharkhand-forests.jpg" alt="Jharkhand Forests">
+  <div class="overlay">
+    <h1>Jharkhand</h1>
+    <p>"The Land of Forests, Tribes & Culture"</p>
+    <a href="#intro">Explore Now</a>
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="history.html">History</a>
+  <a href="geography.html">Geography</a>
+  <a href="culture.html">Culture</a>
+  <a href="tourism.html">Tourism</a>
+  <a href="economy.html">Economy</a>
+  <a href="personalities.html">Personalities</a>
+  
+</nav>
+
+<!-- Intro -->
+<section id="intro">
+  <h2> Jharkhand</h2>
+  <p>The word <b>"Jhar"</b>  means <b>'"forest</b>  and <b>"Khand"</b>  means <b>"land"</b> in various <b>Indo-Aryan languages</b>. <b>Jharkhand</b>  known as the <b>"Land of Forests"</b>. </p>
+  <p>Jharkhand is a state in eastern India. Our state, that was <b>born out of Bihar in 2000</b> , has been gifted with powerful hills, rushing rivers, dense jungles, and a rich tribal culture. Nature and legacy exist in Jharkhand, from the ancient customs of our Adivasi tribes to the successful companies of today. There is something genuinely unique about our region, whether it is our breathtaking waterfalls or the many minerals found beneath the soil.</p>
+</section>
+
+<!-- Feature Cards -->
+<section class="cards" id="geography">
+  <div class="card">
+    <img src="images/geography.jpg" alt="Geography">
+    <h3>Geography & Nature</h3>
+    <p>Hills, rivers, waterfalls, and dense forests that define Jharkhand’s natural beauty.</p>
+    <a href="geography.html">Read More</a>
+  </div>
+  <div class="card">
+    <img src="images/culture.jpg" alt="Culture">
+    <h3>Culture & Festivals</h3>
+    <p>Tribal dances, music, art, and colorful festivals across the state.</p>
+    <a href="culture.html">Read More</a>
+  </div>
+  <div class="card">
+    <img src="images/tourism.jpg" alt="Tourism">
+    <h3>Tourism</h3>
+    <p>Waterfalls, wildlife sanctuaries, valleys, and pilgrimage sites for visitors.</p>
+    <a href="tourism.html">Read More</a>
+  </div>
+  <div class="card">
+    <img src="images/economy.jpeg" alt="Economy">
+    <h3>Economy & Resources</h3>
+    <p>Mineral wealth, industries, and agriculture that drive Jharkhand’s economy.</p>
+    <a href="economy.html">Read More</a>
+  </div>
+</section>
+
+<!-- Featured Attractions -->
+<section id="attractions">
+  <h2>Featured Attractions</h2>
+  <div class="attract-cards">
+    <div class="attract-card">
+      <img src="images/hundru-falls.jpg" alt="Lodh Falls">
+      <h4>Lodh Falls</h4>
+      <p><b>Lodh Falls</b>, also known as <b>Burha Ghagh Falls</b> , is the tallest waterfall in Jharkhand, India, with a height of about <b>143 meters (470 feet)</b>. Located in the <b>Latehar</b>  district near the <b>Netarhat plateau</b> , it cascades down from the <b>Burha River</b>  amidst dense forests and tribal villages.</p>
+    </div>
+    <div class="attract-card">
+      <img src="images/parasnath-hills.jpg" alt="Parasnath Hills">
+      <h4>Parasnath Hills</h4>
+      <p><b>Parasnath Hill</b>  is one of the most important pilgrimage sites for <b>Jains</b>  in India. It is located in the <b>Giridih</b>  district of <b>Jharkhand,</b> and it is the highest peak in Jharkhand and the <b>Chotanagpur Plateau</b>, with an elevation of <b>1,365 meters (4,478 feet)</b> .</p>
+    </div>
+    <div class="attract-card">
+      <img src="images/Rajrappa-Mandir.jpg" alt="Rajrappa Mandir">
+      <h4>Rajrappa</h4>
+      <p><b>Chhinnamastika Temple</b>  is a <b>Hindu temple</b> , dedicated to <b>Goddess Chinnamastika</b>  is a <b>Hindu pilgrimage</b> centre located in <b>Rajrappa</b> , in <b> Ramgarh</b> district of <b>Jharkhand, India</b> .</p>
+    </div>
+  </div>
+</section>
+
+<!-- Top 5 Things to Do -->
+<section id="top5">
+  <h2>Top 5 Things to Do in Jharkhand</h2>
+  <div class="top5-list">
+
+    <div class="top5-item">
+      <img src="images/festival.jpg" alt="Festival">
+      <h4>Attend Tribal Festivals</h4>
+      <p>Experience the vibrant culture, dance, and music of local tribes.</p>
+    </div>
+    <div class="top5-item">
+      <img src="images/hiking.jpg" alt="Hiking">
+      <h4>Hiking & Nature Trails</h4>
+      <p>Explore scenic hills, forests, and trekking paths across Jharkhand.</p>
+    </div>
+    
+    <div class="top5-item">
+      <img src="images/temple.jpg" alt="Temple">
+      <h4>Pilgrimage & Temples</h4>
+      <p>Visit sacred sites like Parasnath Hills and Rajrappa Temple etc.</p>
+    </div>
+
+    <div class="top5-item">
+      <img src="images/waterfall.jpg" alt="Waterfalls">
+      <h4>Visit Waterfalls</h4>
+      <p>Discover majestic waterfalls like Lodh, Hundru, Jonha, and Dassam etc.</p>
+    </div>
+
+    
+  </div>
+</section>
+
+<!-- Facts -->
+<section class="facts" id="facts">
+  <div class="fact"><span>Capital</span><b>Ranchi</b></div>
+  <div class="fact"><span>Sub-Capital</span><b>Dumka</b></div>
+  <div class="fact"><span>Formation Date</span><b>15 Nov 2000</b></div>
+  <div class="fact"><span>Languages</span><b>Hindi, Santhali, Nagpuri</b></div>
+  <div class="fact"><span>State Animal</span><b>Elephant</b></div>
+  <div class="fact"><span>State Bird</span><b>Koel</b></div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p><b>© Johar Jharkhand</b></p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+  const cards = document.querySelectorAll('.card, .attract-card, .top5-item');
+  function reveal() {
+    const windowHeight = window.innerHeight;
+    cards.forEach(card => {
+      const top = card.getBoundingClientRect().top;
+      if(top < windowHeight - 100) {
+        card.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll', reveal);
+  window.addEventListener('load', reveal);
+</script>
+
+</body>
+</html>

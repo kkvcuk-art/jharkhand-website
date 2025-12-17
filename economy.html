@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economy of Jharkhand</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Segoe UI", Arial, sans-serif; background: #f4f7f4; color: #333; line-height: 1.6; }
+
+    /* Hero Banner */
+    .hero {
+      background: url("images/economy-banner.jpg") center/cover no-repeat;
+      color: white; text-align: center;
+      padding: 120px 20px; position: relative;
+    }
+    .hero::after {
+      content: ""; position: absolute; top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h1, .hero p { position: relative; z-index: 1; }
+    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em;text-align: center;}
+
+    /* Navigation */
+    nav { background: #222; display: flex; justify-content: center; gap: 25px; padding: 12px 0; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; transition: 0.3s; padding: 6px 12px; border-radius: 6px; }
+    nav a:hover { background: goldenrod; color: #222; }
+
+    /* Sections */
+    section { padding: 50px 20px; max-width: 1200px; margin: auto; }
+    h2 { color: darkgreen; margin-bottom: 15px; font-size: 1.8em; display: flex; align-items: center; gap: 10px; }
+    p { margin-bottom: 20px; text-align: justify; }
+
+    /* Cards/Grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+    .card {
+      background: #fff; padding: 20px; border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card h3 { margin-bottom: 10px; color: firebrick; font-size: 1.3em; }
+    .card p { font-size: 0.95em; }
+
+    /* Stats section */
+    .stats { background: #1e4620; color: white; text-align: center; padding: 40px 20px; margin: 40px 0; }
+    .stats h2 { color: gold; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 20px; margin-top: 20px; }
+    .stat { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; font-size: 1.2em; }
+    .stat strong { display: block; font-size: 1.8em; color: gold; }
+
+    /* Footer */
+    footer { background: #222; color: #ccc; text-align: center; padding: 15px; font-size: 0.9em; margin-top: 30px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2em; }
+      .hero p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Economy of Jharkhand</h1>
+    <p>From Mines to Markets – The Growth Story of Jharkhand</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="geography.html">Geography</a>
+    <a href="culture.html">Culture</a>
+    <a href="tourism.html">Tourism</a>
+    <a href="economy.html">Economy</a>
+    <a href="personalities.html">Personalities</a>
+    
+  </nav>
+
+  <!-- Overview -->
+  <section>
+    <h2>📊 Overview</h2>
+    <p>
+      Jharkhand is known as the <b>“Mineral Heartland of India”</b>. With abundant coal, iron ore, copper, uranium, and forests, 
+      the state powers India’s industries while also sustaining agriculture and renewable energy growth.
+    </p>
+  </section>
+
+  <!-- Stats Section -->
+  <div class="stats">
+    <h2>Key Economic Facts</h2>
+    <div class="stats-grid">
+      <div class="stat"><strong>40%</strong> of India’s mineral wealth</div>
+      <div class="stat"><strong>60%</strong> people depend on agriculture</div>
+      <div class="stat"><strong>33%</strong> forest cover in the state</div>
+      <div class="stat"><strong>2 Major</strong> steel plants (Jamshedpur & Bokaro)</div>
+    </div>
+  </div>
+
+  <!-- Economy Sectors -->
+  <section>
+    <h2>🏭 Economy Sectors</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>⛏️ Mineral Resources</h3>
+        <p>Jharkhand leads India in coal and iron ore production. Jharia, Dhanbad, and Singhbhum are world-famous for their rich deposits.</p>
+      </div>
+      <div class="card">
+        <h3>🏭 Industrial Growth</h3>
+        <p>Tata Steel (Jamshedpur) and Bokaro Steel Plant are industrial giants. Engineering, cement, and chemical industries also thrive.</p>
+      </div>
+      <div class="card">
+        <h3>🌾 Agriculture & Forestry</h3>
+        <p>Over half the population depends on farming, with rice, maize, and pulses as staples. Forests supply lac, bamboo, and medicinal plants.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Energy & Power</h3>
+        <p>Jharkhand is a power-surplus state, with coal-based thermal plants and investments in solar and hydropower projects.</p>
+      </div>
+      <div class="card">
+        <h3>🧵 Emerging Sectors</h3>
+        <p>Handicrafts like dokra, stone carving, and IT hubs are growing fast, while tourism boosts the service economy.</p>
+      </div>
+      <div class="card">
+        <h3>🚀 Future Prospects</h3>
+        <p>Initiatives like “Make in Jharkhand”, industrial corridors, and renewable energy projects aim to transform the state economy.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p><b>© Johar Jharkhand</b></p>
+  </footer>
+
+</body>
+</html>
